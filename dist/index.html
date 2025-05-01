@@ -29,74 +29,103 @@
         margin: 0;
         padding: 0;
         background-color: #18122b;
+        min-height: 100vh;
+        margin: 0;
       }
 
       html,
       body {
         background: #18122b;
-        background: radial-gradient(at bottom left, #18122b 50%, #443c68 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: radial-gradient(
+          at bottom left,
+          #18122b 50%,
+          #443c68 100%
+        );
         color: #635985;
         line-height: 1.7em;
         margin: 0;
       }
 
+      footer {
+        padding: 20px;
+        text-align: center;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
       main {
+        flex: 1;
         max-width: 800px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 40px;
+      }
+
+      footer {
+        flex: 0;
       }
 
       h1 {
         text-align: center;
+        padding-bottom: 40px;
       }
 
       p {
         text-align: center;
       }
 
-      a {
+      a,
+      a:visited {
         text-decoration: none;
-        color: #007bff;
+        color: #eab2a0;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <main>
       <h1>A few screenshots</h1>
+
+      <p>
+        <a data-fslightbox="gallery" href="./writer-portfolio.jpg">
+          New Writer portfolio
+        </a>
+      </p>
+
+      <p>
+        <a data-fslightbox="gallery" href="./old-dev-design3.jpg">
+          Old portfolio design
+        </a>
+      </p>
+
+      <p>
+        <a data-fslightbox="gallery" href="./current-site.jpg">
+          Current portfolio design
+        </a>
+      </p>
+
+      <p>
+        <a data-fslightbox="gallery" href="./post-design.jpg"> Post design </a>
+      </p>
+
+      <p>
+        <a data-fslightbox="gallery" href="./travel-blog.jpg"> Travel blog </a>
+      </p>
+
+      <p>
+        <a data-fslightbox="gallery" href="./yaks-at-work.jpg">
+          Starter "at work" design
+        </a>
+      </p>
     </main>
-
-    <p>
-      <a data-fslightbox="gallery" href="./writer-portfolio.jpg">
-        New Writer portfolio
-      </a>
-    </p>
-
-    <p>
-      <a data-fslightbox="gallery" href="./old-dev-design3.jpg">
-        Old portfolio design
-      </a>
-    </p>
-
-    <p>
-      <a data-fslightbox="gallery" href="./current-site.jpg">
-        Current portfolio design
-      </a>
-    </p>
-
-    <p>
-      <a data-fslightbox="gallery" href="./post-design.jpg"> Post design </a>
-    </p>
-
-    <p>
-      <a data-fslightbox="gallery" href="./travel-blog.jpg"> Travel blog </a>
-    </p>
-
-    <p>
-      <a data-fslightbox="gallery" href="./yaks-at-work.jpg">
-        Starter "at work" design
-      </a>
-    </p>
-
+    <footer><a href="mailto:tim@timeaton.dev">tim@timeaton.dev</a></footer>
     <script src="./fslightbox.js"></script>
   </body>
 </html>
